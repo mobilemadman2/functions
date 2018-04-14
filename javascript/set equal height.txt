@@ -1,0 +1,11 @@
+function set_equal_height(selector){
+        $(window).on('load resize', function () {
+            var max_h = 0;
+            $(selector).each(function () {
+                max_h = $(this).height() > max_h ? $(this).height() : max_h;
+            });
+            $(selector).each(function () {
+                $(this).css('height', max_h+'px');
+            });
+        });
+    }
