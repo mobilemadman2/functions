@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Convert from Int to String</Title>
+			<Shortcut>intToString</Shortcut>
+			<Description>Chuyển số sang chuỗi</Description>
+			<Author>BMP</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>expression</ID>
+					<ToolTip>Expression to evaluate</ToolTip>
+					<Default>true</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+        <![CDATA[//CONVERT >> số nguyên dương thành chuỗi có thể dùng như mảng: 1234 => "1234"
+string intToString(int num){
+	string rev;
+	//số thành chuỗi đảo ngược
+	while (num > 0)
+	{
+		rev = rev + char(num % 10 + 48);
+		num /= 10;
+	}
+	//đảo ngược chuỗi
+	string res;
+	for (int i = rev.size() - 1; i >= 0; i--){
+		res += rev[i];
+	}
+	return res;
+}
+
+$end$]]>
+      </Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

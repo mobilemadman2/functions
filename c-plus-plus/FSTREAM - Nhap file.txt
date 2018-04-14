@@ -1,0 +1,12 @@
+#include <fstream>
+int main(){
+	int n;
+	ifstream in ("file.name");
+	in >> n;
+	in.close();
+	
+	ofstream out ("file.name");
+	out << n;
+	out.close;
+	return 0;
+}
