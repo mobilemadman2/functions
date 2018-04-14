@@ -1,0 +1,20 @@
+//CSS
+<div class="form-group">
+    <select class="form-control" id="modeSelect" onChange="whatMode();" style="width:auto;margin:0 auto;background:#F44336;color:white">
+      <option id="hiramode">Hira Mode</option>
+      <option id="katamode">Kata Mode</option>
+    </select>
+  </div>
+
+//JS
+var mode="hira";
+function whatMode(){
+	if($("#modeSelect").html()=="Kata Mode"){mode = "kata";}
+	else {mode = "hira";}
+}
+$(document).keydown(function(){
+	if(event.which==118){
+		if(mode=="hira"){mode = "kata";document.getElementById("katamode").selected = true;}
+		else{mode = "hira";document.getElementById("hiramode").selected = true;}
+	}
+});
