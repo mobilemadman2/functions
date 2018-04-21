@@ -1,0 +1,59 @@
+// functions.php
+/**** add class name to body tag *****/
+function my_plugin_body_class($classes) {
+	$classes[] = 'loading';
+	return $classes;
+}
+add_filter('body_class', 'my_plugin_body_class');
+
+// style.css
+/* Loading style */
+body.loading {overflow: hidden;}
+body:before, body:after {
+    content:''; opacity:0; visibility:hidden; position:fixed;
+    -webkit-transition: all .5s ease;-o-transition: all .5s ease;transition: all .5s ease;
+}
+body:after {-webkit-transition: all .3s ease;-o-transition: all .3s ease;transition: all .3s ease;}
+body:before {top:0; left:0; right:0; bottom:0; z-index:9998; background:#173456;}
+body:after {
+    top:50%; left:50%; z-index:9999;
+    -webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);
+    width:50px; height:50px; background: url('../images/three-dots.svg') center/contain no-repeat;
+}
+body.loading:before, body.loading:after {opacity:1; visibility:visible;}
+
+//themes.js
+/**
+* Remove loading class
+*/
+$(window).on('load', function () {
+    if($('body').hasClass('loading')){
+        $('body').removeClass('loading');
+    }
+});
+
+/**
+* When user leaving page
+*/
+function user_leaving_page() {
+    // Call to global function
+    window.onbeforeunload = on_leaving_page;
+    // Prevent action from email click
+    if (/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())) {
+        $('a.link_email').click(function() {mailtoClicked = true;});
+    }
+}
+user_leaving_page();
+
+/**
+ * Add loading class
+ * This function placed outsite ready scope
+ */
+var mailtoClicked = false;
+function on_leaving_page() {
+    if (!mailtoClicked) {
+        jQuery('body').addClass('loading');
+    } else {
+        mailtoClicked = false;
+    }
+}
