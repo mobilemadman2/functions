@@ -20,8 +20,10 @@ var position = $(window).scrollTop();
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll > position) {
+        // scroll down
         $('.backtotop').removeClass('showing');
     } else {
+        // scroll up
         $('.backtotop').addClass('showing');
     }
     position = scroll;
@@ -36,6 +38,7 @@ function detectScrollToTop(scrollTrigger = 100){
         if (scrollTop > scrollTrigger) {
 
         } else {
+            // top touched
             $('.backtotop').removeClass('showing');
         }
     });
