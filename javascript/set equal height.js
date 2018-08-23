@@ -1,16 +1,28 @@
 /**
-* Set equal height on load, resize
-* @param $items
-*/
-function set_equal_height($items){
+ * Set equal height on load, resize
+ * @param $items
+ * @param $breakpoint | remove height if under breakpoint
+ */
+function set_equal_height($items, breakpoint) {
     $(window).on('load resize', function () {
-        var max_h = 0;
+        if ($(window).width() > breakpoint) {
+            // Find max height
+            var max_h = 0;
             $items.each(function () {
                 max_h = $(this).height() > max_h ? $(this).height() : max_h;
             });
+            // Set max height
             $items.each(function () {
-                $(this).css('height', max_h+'px');
+                $(this).css('height', max_h + 'px');
             });
-        });
-    }
-    set_equal_height($('.woocommerce li.product .woocommerce-loop-product__title'));
+        } else {
+            // Reset height
+            $items.each(function () {
+                $(this).css('height', '');
+            });
+        }
+
+    });
+}
+
+set_equal_height($('.home-services .service-box > p'), 1024);
