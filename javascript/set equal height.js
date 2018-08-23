@@ -5,22 +5,21 @@
  */
 function set_equal_height($items, breakpoint) {
     $(window).on('load resize', function () {
+        var max_h = 0;
         if ($(window).width() > breakpoint) {
             // Find max height
-            var max_h = 0;
             $items.each(function () {
                 max_h = $(this).height() > max_h ? $(this).height() : max_h;
             });
             // Set max height
-            $items.each(function () {
-                $(this).css('height', max_h + 'px');
-            });
+            max_h += "px";
         } else {
             // Reset height
-            $items.each(function () {
-                $(this).css('height', '');
-            });
+            max_h = "";
         }
+        $items.each(function () {
+            $(this).css('height', max_h);
+        });
 
     });
 }
