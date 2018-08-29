@@ -7,6 +7,11 @@ function set_equal_height($items, breakpoint) {
     $(window).on('load resize', function () {
         var max_h = 0;
         if ($(window).width() > breakpoint) {
+            // Reset height
+            $items.each(function () {
+                $(this).css('height', '');
+            });
+
             // Find max height
             $items.each(function () {
                 max_h = $(this).height() > max_h ? $(this).height() : max_h;
@@ -23,5 +28,3 @@ function set_equal_height($items, breakpoint) {
 
     });
 }
-
-set_equal_height($('.home-services .service-box > p'), 1024);
