@@ -1,30 +1,19 @@
 /**
  * Set equal height on load, resize
  * @param $items
- * @param $breakpoint | remove height if under breakpoint
  */
-function set_equal_height($items, breakpoint) {
+function set_equal_height($items) {
     $(window).on('load resize', function () {
         var max_h = 0;
-        if ($(window).width() > breakpoint) {
-            // Reset height
-            $items.each(function () {
-                $(this).css('height', '');
-            });
+        // Reset height
+        $items.outerHeight('');
 
-            // Find max height
-            $items.each(function () {
-                max_h = $(this).height() > max_h ? $(this).height() : max_h;
-            });
-            // Set max height
-            max_h += "px";
-        } else {
-            // Reset height
-            max_h = "";
-        }
+        // Find max height
         $items.each(function () {
-            $(this).css('height', max_h);
+            max_h = $(this).outerHeight() > max_h ? $(this).outerHeight() : max_h;
         });
 
+        // Set max height
+        $items.outerHeight(max_h);
     });
 }
