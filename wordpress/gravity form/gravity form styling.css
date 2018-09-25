@@ -71,3 +71,13 @@
 .gform_wrapper.gform_validation_error .top_label li.gfield.gfield_error.gf_right_half {
     max-width:50% !important;
 }
+
+/* RESPONSIVE */
+@media only screen and (max-width: 640px) {
+    .main_content .gform_wrapper li.gfield.gf_left_half {padding-right:0!important;}
+    .main_content .gform_wrapper li.gfield.gf_right_half {padding-left:0!important;}
+    .gform_wrapper.gform_validation_error li.gfield.gfield_error.gf_left_half,
+    .gform_wrapper.gform_validation_error li.gfield.gfield_error.gf_right_half {
+        max-width:100% !important;
+    }
+}
