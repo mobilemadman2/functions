@@ -5,26 +5,12 @@ $related = get_posts( array(
 	'numberposts'  => 9,
 	'post__not_in' => array( get_the_ID() )
 ) );
-if ( $related ) {
+if ( $related ) :;
 	?>
     <div class="related-items">
         <h2 class="related-title"><?php echo __( 'Related items', 'econocom' ); ?></h2>
         <div class="related-list-content">
-            <div class="related-list"
-                 data-slick='{
-                             "slidesToShow": 3,
-                             "slidesToScroll": 1,
-                             "infinite": true,
-                             "dots": true,
-                             "responsive": [
-                             {
-                             "breakpoint": 1170,
-                             "settings": {"slidesToShow": 2}
-                             },
-                             {
-                             "breakpoint": 680,
-                             "settings": {"slidesToShow": 1}
-                             }]}'>
+            <div class="related-list">
 				<?php
 				foreach ( $related as $post ) {
 					setup_postdata( $post );
@@ -36,5 +22,5 @@ if ( $related ) {
     </div>
 	<?php
 	wp_reset_postdata();
-}
+endif;
 ?>
