@@ -36,7 +36,7 @@ function detectScrollToTop(scrollTrigger = 100){
     $(window).on('load scroll', function () {
         var scrollTop = $(window).scrollTop();
         if (scrollTop > scrollTrigger) {
-
+            // top leave
         } else {
             // top touched
             $('.backtotop').removeClass('showing');
