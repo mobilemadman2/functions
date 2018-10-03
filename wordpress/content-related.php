@@ -42,3 +42,47 @@ if(get_post_type(get_the_ID()) != 'post'){
         </div>
     </div>
 </div>
+
+<!-- USE THIS CODE TO SHOW RELATED ITEMS -->
+<div class="related-wrapper">
+	<?php
+	$related = get_posts( array(
+		'numberposts'  => 9,
+		'post__not_in' => array( get_the_ID() ),
+		'post_type'        => CAREER_TYPE
+	) );
+	if ( $related ):
+		?>
+        <div class="related-inner">
+            <h2 class="related-title"><span><?php echo __( 'gelijkaardige jobs', 'campine' ); ?></span></h2>
+            <div class="related-list-content">
+                <div class="related-list list-items"
+                     data-slick='{
+                             "slidesToShow": 3,
+                             "slidesToScroll": 1,
+                             "infinite": true,
+                             "dots": true,
+                             "arrows": false,
+                             "responsive": [
+                             {
+                             "breakpoint": 1170,
+                             "settings": {"slidesToShow": 2}
+                             },
+                             {
+                             "breakpoint": 680,
+                             "settings": {"slidesToShow": 1}
+                             }]}'>
+					<?php
+					foreach ( $related as $post ) {
+						setup_postdata( $post );
+						get_template_part( 'partials/content', 'related' );
+					}
+					?>
+                </div>
+            </div>
+        </div>
+		<?php
+		wp_reset_postdata();
+	endif;
+	?>
+</div>
