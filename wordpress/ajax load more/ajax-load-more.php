@@ -1,4 +1,8 @@
 <?php
+/**
+ * functions.php
+ * include_once( 'inc/ajax-load-more.php' );
+ */
 function twc_load_more_scripts() {
     global $wp_query;
 
