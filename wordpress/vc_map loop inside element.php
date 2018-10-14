@@ -8,7 +8,6 @@ vc_map( array(
 	"base"             => "conversion_sections",
 	"category"         => VC_CATEGORY,
 	"icon"             => VC_ICON,
-	'admin_enqueue_js' => array( THEME_URL . '/assets/js/vc_map.js' ),
 	"params"           => array(
 		array(
 			'type'       => 'param_group',
