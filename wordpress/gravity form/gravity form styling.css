@@ -1,5 +1,5 @@
 /* GRAVITY FORM */
-.main_content .gform_wrapper {margin-bottom:110px;}
+.main_content .gform_wrapper {margin-bottom:40px;}
 /* GRAVITY FORM > Label */
 .main_content .gform_wrapper label.gfield_label {
     font-size:15px; font-weight:400; color:#000;
@@ -8,7 +8,7 @@
 .main_content .gform_wrapper .gfield_required {display:none;}
 
 /* GRAVITY FORM > <li> */
-.main_content .gform_wrapper ul li.gfield {padding:0!important; margin-top:25px;}
+.main_content .gform_wrapper ul li.gfield {padding:0!important; margin-top:15px;}
 .main_content .gform_wrapper .top_label li.gfield.gf_left_half {padding-right:10px !important;}
 .main_content .gform_wrapper .top_label li.gfield.gf_right_half {padding-left:10px !important;}
 .main_content .gform_wrapper .top_label div.ginput_container {margin-top:0 !important;}
@@ -17,9 +17,9 @@
 .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
 .gform_wrapper textarea, .gform_wrapper select {
     width:100% !important; height:48px; line-height:48px;
-    text-indent:15px; background:#fff;
+    text-indent:15px; background:#ebebeb;
     -webkit-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease;
-    margin-top:0; border-radius:5px;
+    margin-top:0;
 }
 .gform_wrapper input[type=file] {
     border:1px solid #a8a8a8; width:100%!important; height:48px; padding:11px 15px;
@@ -30,8 +30,14 @@
 .gform_wrapper textarea:hover, .gform_wrapper select:hover,
 .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]):focus,
 .gform_wrapper textarea:focus, .gform_wrapper select:focus {
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 10px 0 rgba(31, 31, 31, .3);
 }
+
+/* GRAVITY FORM > placeholder */
+.gform_wrapper ::-webkit-input-placeholder {color: #777777; font-style:italic; font-family: 'Playfair Display', serif;}
+.gform_wrapper ::-moz-placeholder {color: #777777; font-style:italic; font-family: 'Playfair Display', serif;}
+.gform_wrapper :-ms-input-placeholder {color: #777777; font-style:italic; font-family: 'Playfair Display', serif;}
+.gform_wrapper :-moz-placeholder {color: #777777; font-style:italic; font-family: 'Playfair Display', serif;}
 
 /* GRAVITY FORM > List checkbox */
 .main_content .gform_wrapper ul.gfield_checkbox, .main_content .gform_wrapper ul.gfield_radio {
