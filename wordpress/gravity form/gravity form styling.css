@@ -11,6 +11,8 @@
 .main_content .gform_wrapper ul li.gfield {padding:0!important; margin-top:15px;}
 .main_content .gform_wrapper .top_label li.gfield.gf_left_half {padding-right:10px !important;}
 .main_content .gform_wrapper .top_label li.gfield.gf_right_half {padding-left:10px !important;}
+.main_content .gform_wrapper .top_label li.gfield.gf_left_half:first-child,
+.main_content .gform_wrapper .top_label li.gfield.gf_right_half:nth-child(2),
 .main_content .gform_wrapper .top_label div.ginput_container {margin-top:0 !important;}
 
 /* GRAVITY FORM > input, textarea, select */
@@ -80,8 +82,10 @@
 
 /* RESPONSIVE */
 @media only screen and (max-width: 640px) {
-    .main_content .gform_wrapper li.gfield.gf_left_half {padding-right:0!important;}
-    .main_content .gform_wrapper li.gfield.gf_right_half {padding-left:0!important;}
+    .main_content .gform_wrapper .top_label li.gfield.gf_left_half {padding-right:0!important;}
+    .main_content .gform_wrapper .top_label li.gfield.gf_right_half {padding-left:0!important;}
+    .main_content .gform_wrapper .top_label li.gfield.gf_left_half:first-child,
+    .main_content .gform_wrapper .top_label li.gfield.gf_right_half:nth-child(2) {margin-top:15px !important;}
     .gform_wrapper.gform_validation_error li.gfield.gfield_error.gf_left_half,
     .gform_wrapper.gform_validation_error li.gfield.gfield_error.gf_right_half {
         max-width:100% !important;
