@@ -1,5 +1,33 @@
 /**
- * Parallax using background image
+ * Parallax using background image v2.0
+ */
+viivue.backgroundParallax = function (el) {
+    $(el).each(function () {
+        var _this = $(this);
+        $(window).on('load resize', function () {
+            if ($(window).width() > 768) {
+                var offset = _this.offset().top, wScroll = 0, scroll_window;
+
+                // On first load
+                scroll_window = $(window).scrollTop();
+                wScroll = (scroll_window - offset) * 0.5;
+                _this.css('background-position', '50% ' + wScroll + 'px');
+
+                // On scroll
+                $(window).on("scroll", function () {
+                    scroll_window = $(window).scrollTop();
+                    wScroll = (scroll_window - offset) * 0.5;
+                    _this.css('background-position', '50% ' + wScroll + 'px');
+                });
+            } else {
+                _this.css('background-position', '');
+            }
+        });
+    });
+};
+
+/**
+ * Parallax using background image v1.0
  */
 TWC.backgroundParallax = function (el, scrollRatio, backgroundSize) {
     // set default value
