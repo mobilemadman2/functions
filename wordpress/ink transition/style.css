@@ -2,39 +2,39 @@
  * Ink transition effect
 ****************************/
 /* Transition Layer */
-.transition-layer.visible {
+.ink-transition.visible {
     opacity: 1; visibility: visible;
 }
-.transition-layer.opening .background-layer {
-     animation: cd-sequence 0.8s steps(24);
+.ink-transition.opening .ink-layer {
+     animation: ink-sequence 0.8s steps(24);
      animation-fill-mode: forwards;
 }
-.transition-layer.closing .background-layer {
-     animation: cd-sequence-reverse 0.8s steps(24);
+.ink-transition.closing .ink-layer {
+     animation: ink-sequence-reverse 0.8s steps(24);
      animation-fill-mode: forwards;
 }
-.transition-layer {
+.ink-transition {
     position: fixed; top: 0; left: 0; z-index: 999;
     height: 100%; width: 100%;
     opacity: 0; visibility: hidden; overflow: hidden;
 }
-.transition-layer .background-layer {
+.ink-transition .ink-layer {
     position: absolute; left: 50%; top: 50%;
     transform: translateY(-50%) translateX(-2%);
     height: 100%; width: 2500%;
     background: url('../images/ink.png') no-repeat 0 0;
     background-size: 100% 100%;
 }
-.transition-layer .solid-layer {
+.ink-transition .solid-layer {
     background: #c8c8c8; height: 100%; width: 100%;
     position: fixed; top: 0; left: 0;
     opacity: 0; visibility: hidden;
 }
-.transition-layer .modal-close, .transition-layer .modal-open {
+.ink-transition .ink-close, .ink-transition .ink-open {
     visibility: hidden; opacity: 0;
 }
 
-@keyframes cd-sequence {
+@keyframes ink-sequence {
     0% {
         transform: translateY(-50%) translateX(-2%);
     }
@@ -43,7 +43,7 @@
     }
 }
 
-@keyframes cd-sequence-reverse {
+@keyframes ink-sequence-reverse {
     0% {
         transform: translateY(-50%) translateX(-98%);
     }
