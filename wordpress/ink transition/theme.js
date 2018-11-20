@@ -1,15 +1,17 @@
 TWC = {};
 jQuery(document).ready(function ($) {
+    var $body = $('body');
+
     /**
      * Handle loading state
      */
     TWC.handleLoadingState = function () {
         $(window).on('load', function () {
-            if ($('body').hasClass('twc-page-loading')) {
+            if ($body.hasClass('twc-page-loading')) {
 
                 // Remove loading class after page loaded
-                $('body').removeClass('twc-page-loading');
-                $('body').addClass('twc-page-loaded');
+                $body.removeClass('twc-page-loading');
+                $body.addClass('twc-page-loaded');
                 $('#ink-close').trigger('click');
 
                 // Add loading class when user leave page
@@ -23,12 +25,15 @@ jQuery(document).ready(function ($) {
         });
     };
 
+    /**
+     * Ink transition effect
+     */
     TWC.inkTransitionEffect = function () {
         // cache some jQuery objects
         var modalTrigger = $('#ink-open'),
             modalClose = $('#ink-close'),
-            transitionLayer = $('.ink-transition'),
-            transitionBackground = transitionLayer.children();
+            inkTransition = $('.ink-transition'),
+            inkLayer = inkTransition.find('.ink-layer');
 
         var frameProportion = 1.78, //png frame aspect ratio
             frames = 25, //number of png frames
@@ -46,16 +51,16 @@ jQuery(document).ready(function ($) {
         // open modal window
         modalTrigger.on('click', function (event) {
             event.preventDefault();
-            transitionLayer.addClass('visible opening');
+            inkTransition.addClass('visible opening');
         });
 
         // close modal window
         modalClose.on('click', function (event) {
             event.preventDefault();
-            transitionLayer.addClass('closing');
-            transitionBackground.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
-                transitionLayer.removeClass('closing opening visible');
-                transitionBackground.off('webkitAnimationEnd oanimationend msAnimationEnd animationend');
+            inkTransition.addClass('closing');
+            inkLayer.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
+                inkTransition.removeClass('closing opening visible');
+                inkLayer.off('webkitAnimationEnd oanimationend msAnimationEnd animationend');
             });
         });
 
@@ -72,7 +77,7 @@ jQuery(document).ready(function ($) {
                 layerWidth = layerHeight * frameProportion;
             }
 
-            transitionBackground.css({
+            inkLayer.css({
                 'width': layerWidth * frames + 'px',
                 'height': layerHeight + 'px'
             });
