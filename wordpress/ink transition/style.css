@@ -6,12 +6,12 @@
     opacity: 1; visibility: visible;
 }
 .ink-transition.opening .ink-layer {
-     animation: ink-sequence 0.8s steps(24);
-     animation-fill-mode: forwards;
+    animation: ink-sequence 0.8s steps(24);
+    animation-fill-mode: forwards;
 }
 .ink-transition.closing .ink-layer {
-     animation: ink-sequence-reverse 0.8s steps(24);
-     animation-fill-mode: forwards;
+    animation: ink-sequence-reverse 0.8s steps(24);
+    animation-fill-mode: forwards;
 }
 .ink-transition {
     position: fixed; top: 0; left: 0; z-index: 999;
@@ -30,7 +30,11 @@
     position: fixed; top: 0; left: 0;
     opacity: 0; visibility: hidden;
 }
-.ink-transition .ink-close, .ink-transition .ink-open {
+body.twc-page-loading .ink-transition .solid-layer {
+    opacity: 1;
+    visibility: visible;
+}
+.ink-transition #ink-close, .ink-transition #ink-open {
     visibility: hidden; opacity: 0;
 }
 
