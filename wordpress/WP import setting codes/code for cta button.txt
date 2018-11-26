@@ -1,0 +1,9 @@
+// put this code to the end of footer.php
+<!-- CTA Button -->
+        <?php
+        $cta_btn = get_field('cta_button', 'option');
+        $cta_img = $cta_btn['button_img'];
+        $cta_url = $cta_btn['button_url'];
+        ?>
+        <div class="cta-button"><a href="<?php echo $cta_url;?>"><img src="<?php echo $cta_img;?>" alt="cta-image"></a></div>
+        <!-- End CTA Button -->

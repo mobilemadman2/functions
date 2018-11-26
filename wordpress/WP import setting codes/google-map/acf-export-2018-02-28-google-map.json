@@ -1,0 +1,107 @@
+[
+    {
+        "key": "group_5a957b3c4ebbd",
+        "title": "Kaart gebruikt als achtergrond",
+        "fields": [
+            {
+                "key": "field_5a957b46ff80a",
+                "label": "Kaart",
+                "name": "map_bg",
+                "type": "group",
+                "value": null,
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_5a972ff9256fb",
+                        "label": "Plaats",
+                        "name": "location",
+                        "type": "google_map",
+                        "value": null,
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "center_lat": "",
+                        "center_lng": "",
+                        "zoom": "",
+                        "height": ""
+                    },
+                    {
+                        "key": "field_5a973010256fc",
+                        "label": "Kaart aanwijzer",
+                        "name": "pointer",
+                        "type": "image",
+                        "value": null,
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_5a97304f256fd",
+                        "label": "Aangepaste stijlcode",
+                        "name": "custom_style",
+                        "type": "text",
+                        "value": null,
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_template",
+                    "operator": "==",
+                    "value": "templates\/contact-template.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]
