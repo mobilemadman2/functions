@@ -1,0 +1,91 @@
+
+[
+    {
+        "key": "group_5a72ec3291ccf",
+        "title": "CTA button",
+        "fields": [
+            {
+                "key": "field_5a72ec6e2ede0",
+                "label": "CTA button",
+                "name": "cta_button",
+                "type": "group",
+                "value": null,
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "key": "field_5a72ecea2ede1",
+                        "label": "Afbeelding van de knop",
+                        "name": "button_img",
+                        "type": "image",
+                        "value": null,
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_5a72ed152ede2",
+                        "label": "Link naar pagina",
+                        "name": "button_url",
+                        "type": "page_link",
+                        "value": null,
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "post_type": [
+                            "page"
+                        ],
+                        "taxonomy": [],
+                        "allow_null": 0,
+                        "allow_archives": 1,
+                        "multiple": 0
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-algemene-opties"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]

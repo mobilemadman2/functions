@@ -1,0 +1,68 @@
+<p>[vc_row][vc_column width="1/2"][vc_column_text]</p>
+<h1>Heading 1</h1>
+<p>Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec sollicitudin molestie malesuada. Cras ultricies ligula sed magna dictum porta.</p>
+<h2>Heading 2</h2>
+<p>Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec sollicitudin molestie malesuada. Cras ultricies ligula sed magna dictum porta.</p>
+<h3>Heading 3</h3>
+<p>Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec sollicitudin molestie malesuada. Cras ultricies ligula sed magna dictum porta.</p>
+<h4>Heading 4</h4>
+<p>Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec sollicitudin molestie malesuada. Cras ultricies ligula sed magna dictum porta.</p>
+<h5>Heading 5</h5>
+<p>Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec sollicitudin molestie malesuada. Cras ultricies ligula sed magna dictum porta.</p>
+<h6>Heading 6</h6>
+<p>Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec sollicitudin molestie malesuada. Cras ultricies ligula sed magna dictum porta.[/vc_column_text][/vc_column][vc_column width="1/2"][vc_column_text]</p>
+<h3>Text colors &amp; fonts</h3>
+<p>Text with class[/vc_column_text][vc_column_text]</p>
+<table>
+<tbody>
+<tr>
+<td><strong>"class_name"</strong></td>
+<td>Lorem ipsum dolor sit amet</td>
+</tr>
+<tr>
+<td><strong>"class_name"</strong></td>
+<td>Lorem ipsum dolor sit amet</td>
+</tr>
+<tr>
+<td><strong>"class_name"</strong></td>
+<td>Lorem ipsum dolor sit amet</td>
+</tr>
+</tbody>
+</table>
+<p>[/vc_column_text][vc_separator][vc_column_text]</p>
+<h3>Buttons</h3>
+<p>Text with class[/vc_column_text][vc_row_inner][vc_column_inner width="1/2"][vc_column_text]<strong>"class_name"</strong></p>
+<p><a href="#" class="class_name">Sample button</a>[/vc_column_text][/vc_column_inner][vc_column_inner width="1/2"][vc_column_text]<strong>"class_name"</strong></p>
+<p><a href="#" class="class_name">Sample button</a>[/vc_column_text][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row][vc_row][vc_column][vc_separator][vc_column_text]</p>
+<h3>Headings</h3>
+<p>Text with class[/vc_column_text][vc_column_text]</p>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+<p>[/vc_column_text][/vc_column][/vc_row][vc_row][vc_column][vc_separator][vc_column_text]</p>
+<h3>Lists</h3>
+<p>List with class[/vc_column_text][vc_column_text]<strong>"unordered_list"</strong></p>
+<ul>
+<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+<li>Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</li>
+<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</li>
+<li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</li>
+</ul>
+<p>[/vc_column_text][/vc_column][/vc_row][vc_row][vc_column][vc_separator][vc_column_text]</p>
+<h3>Icons</h3>
+<p>Text with class[/vc_column_text][/vc_column][/vc_row][vc_row][vc_column][vc_separator][vc_column_text]</p>
+<h3>Tables</h3>
+<p>Table with class[/vc_column_text][/vc_column][/vc_row][vc_row][vc_column][vc_separator][vc_column_text]</p>
+<h3>Boxes</h3>
+<p>Text block with class[/vc_column_text][vc_row_inner][vc_column_inner width="1/2"][vc_column_text]<strong>""</strong></p>
+<p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.[/vc_column_text][/vc_column_inner][vc_column_inner width="1/2"][vc_column_text]<strong>""</strong></p>
+<p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.[/vc_column_text][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row][vc_row][vc_column][vc_separator][vc_column_text]</p>
+<h3>Accordion</h3>
+<p>[/vc_column_text][vc_tta_accordion active_section="1" el_class="accordion_style"][vc_tta_section title="Lorem ipsum" tab_id="1523209419801-1251f560-8ba3"][vc_column_text]</p>
+<p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+<p>[/vc_column_text][/vc_tta_section][vc_tta_section title="Dolor sit amet" tab_id="1523209419830-f2436c53-fd58"][vc_column_text]</p>
+<p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+<p>[/vc_column_text][/vc_tta_section][/vc_tta_accordion][/vc_column][/vc_row]</p>
