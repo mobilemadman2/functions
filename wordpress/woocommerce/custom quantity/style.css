@@ -1,0 +1,21 @@
+/* Custom quantity */
+.custom-quantity {
+    display:inline-flex;
+    border:1px dashed #c4c2bf; border-radius:5px; overflow:hidden;
+}
+.custom-quantity a,
+.custom-quantity input {
+    width:50px!important; height:50px; line-height:50px;
+    display:block; text-align:center; font-size:27px;
+}
+.custom-quantity input {
+    font-size:18px; padding:0!important; background:transparent;
+    border-left:1px dashed #c4c2bf; border-right:1px dashed #c4c2bf;
+}
+.custom-quantity input::-webkit-inner-spin-button,
+.custom-quantity input::-webkit-outer-spin-button {
+    -webkit-appearance: none; margin: 0;
+}
+.custom-quantity a {font-size:33px; cursor:pointer; color:#443554;}
+.custom-quantity a:hover {background:#ff5a5a; color:#fff;}
+.custom-quantity a.decrease {line-height:43px !important}
