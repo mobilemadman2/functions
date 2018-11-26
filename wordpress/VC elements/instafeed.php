@@ -27,7 +27,8 @@ vc_map( array(
 		array(
 			'type'       => 'textfield',
 			'heading'    => __( 'Instagram shortcode', 'theme' ),
-			'param_name' => 'ig_shortcode'
+			'param_name' => 'ig_shortcode',
+			'value'      => 'instagram-feed'
 		)
 	)
 ) );
