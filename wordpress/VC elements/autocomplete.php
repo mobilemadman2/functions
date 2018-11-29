@@ -1,6 +1,7 @@
 <?php
 /**
  * VC Element with Auto Complete
+ * https://cactusthemes.com/blog/autocomplete-param-type-visual-composer/
  */
 
 vc_map( array(
