@@ -28,8 +28,8 @@ vc_map( array(
 	)
 ) );
 
-add_filter( 'vc_autocomplete_[base]_[para_name]_callback', "autoCompleteSuggester", 10, 1 );
-add_filter( 'vc_autocomplete_[base]_[para_name]_render', "autoCompleteRender", 10, 1 );
+add_filter( 'vc_autocomplete_[base]_[para_name]_callback', "[base]_autoCompleteSuggester", 10, 1 );
+add_filter( 'vc_autocomplete_[base]_[para_name]_render', "[base]_autoCompleteRender", 10, 1 );
 
 add_shortcode( "[base]", "vc_element_base_shortcode" );
 
@@ -41,7 +41,7 @@ function vc_element_base_shortcode( $attrs ) {
 	return $html;
 }
 
-function autoCompleteSuggester( $query ) {
+function base_autoCompleteSuggester( $query ) {
 	/*$result = get_terms( array(
 		'taxonomy'   => PRODUCT_CATEGORY,
 		'hide_empty' => false,
@@ -69,7 +69,7 @@ function autoCompleteSuggester( $query ) {
 	return $array_list;
 }
 
-function autoCompleteRender( $query ) {
+function base_autoCompleteRender( $query ) {
 	/*$value = trim( $query['value'] );
 	if ( ! empty( $value ) ) {
 		$p             = get_term( $value );
