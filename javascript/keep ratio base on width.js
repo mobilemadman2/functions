@@ -6,8 +6,9 @@
  */
 TWC.keepRatioBaseOnWidth = function ($el, x, y) {
     if ($el.length) {
-        var w = $el.width(), h = 0;
-        $window.on('load resize', function () {
+        var w = 0, h = 0;
+        $(window).on('load resize', function () {
+            w = $el.width();
             h = y * w / x;
             $el.addClass("twc-ratio-kept");
             $el.height(h);
