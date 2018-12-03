@@ -22,7 +22,7 @@ body.menu-open .btn_menu:after  {
 }
 body.menu-open .btn_menu span {width:0;}
 
-/* HAMBURGER MENU */
+/** HAMBURGER MENU **/
 .hamburger-menu {
     width:40px; height:40px; margin-left:15px; display:none;
     cursor:pointer; position:relative; box-sizing:border-box;
