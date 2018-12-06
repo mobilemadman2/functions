@@ -22,7 +22,7 @@ function mv_browser_body_class($classes) {
 	} elseif ( stristr( $_SERVER['HTTP_USER_AGENT'],"linux") ) {
 		$classes[] = 'linux';
 	} elseif ( stristr( $_SERVER['HTTP_USER_AGENT'],"windows") ) {
-		$classes[] = 'windows';
+		$classes[] = 'windowss';
 	}
 	return $classes;
 }
