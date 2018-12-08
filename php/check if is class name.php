@@ -6,5 +6,5 @@
 class sample {}
 
 if($current_object instanceof sample){
-	// do stuff
+	// do stuffs
 }
