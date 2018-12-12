@@ -1,9 +1,16 @@
+/**
+ * Scroll control with classes
+ */
 TWC.scrollingControl = function () {
+    var lastPosition = 0,
+        scrollAmount = 0,
+        topTrigger = 0, // $element.offset().top
+        downTrigger = $(".header__banner").outerHeight();
+
     // Detect scroll direction
-    var position = $(window).scrollTop();
     $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
-        if (scroll > position) {
+        scrollAmount = $(window).scrollTop();
+        if (scrollAmount > lastPosition && scrollAmount > downTrigger) {
             // scroll down
             $body.removeClass('scroll-up');
             $body.addClass('scroll-down');
@@ -12,18 +19,18 @@ TWC.scrollingControl = function () {
             $body.addClass('scroll-up');
             $body.removeClass('scroll-down');
         }
-        position = scroll;
+        lastPosition = scrollAmount;
     });
 
     // Detect scroll to top
-    var scrollTrigger = $('.main_header_wrapper').height() / 2;
     $(window).on('load scroll', function () {
-        var scrollTop = $(window).scrollTop();
-        if (scrollTop > scrollTrigger) {
+        if (scrollAmount > topTrigger) {
             $body.removeClass("scroll-top");
+            $body.addClass("scroll-leave-top");
         } else {
             // top touched
             $body.addClass("scroll-top");
+            $body.removeClass("scroll-leave-top");
         }
     });
 };
