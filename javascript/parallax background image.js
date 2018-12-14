@@ -1,9 +1,15 @@
 /**
  * Parallax using background image v2.0
+ * @param el
+ * @param positionX: background position x | default center
  */
-viivue.backgroundParallax = function (el) {
+TWC.backgroundParallax = function (el, positionX) {
     $(el).each(function () {
         var _this = $(this);
+        if (typeof positionX === "undefined") {
+            positionX = "center";
+        }
+        positionX += " ";
         $(window).on('load resize', function () {
             if ($(window).width() > 768) {
                 var offset = _this.offset().top, wScroll = 0, scroll_window;
@@ -11,16 +17,16 @@ viivue.backgroundParallax = function (el) {
                 // On first load
                 scroll_window = $(window).scrollTop();
                 wScroll = (scroll_window - offset) * 0.5;
-                _this.css('background-position', '50% ' + wScroll + 'px');
+                _this.css('background-position', positionX + wScroll + 'px');
 
                 // On scroll
                 $(window).on("scroll", function () {
                     scroll_window = $(window).scrollTop();
                     wScroll = (scroll_window - offset) * 0.5;
-                    _this.css('background-position', '50% ' + wScroll + 'px');
+                    _this.css('background-position', positionX + wScroll + 'px');
                 });
             } else {
-                _this.css('background-position', '');
+                _this.css('background-position', positionX + "center");
             }
         });
     });
