@@ -31,7 +31,7 @@ Viivue.smoothSectionScroll = function ($el, offset, speed, callbackBeforeAnimate
             $(this).click(function (e) {
                 e.preventDefault();
 
-                if (typeof callbackAfterAnimation !== "undefined") {
+                if (typeof callbackBeforeAnimate !== "undefined") {
                     callbackBeforeAnimate();
                 }
 
