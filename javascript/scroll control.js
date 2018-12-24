@@ -2,11 +2,12 @@
  * Scroll control with classes
  */
 TWC.scrollingControl = function () {
-    var lastPosition = 0,
-        scrollAmount = 0,
+    var lastPosition = 0, // should not modify
+        scrollAmount = 0, // should not modify
         topTrigger = 0, // px offset from top
         bottomTrigger = 200, // px offset from bottom
-        downTrigger = $(".header__banner").outerHeight();
+        downTrigger = 0, // px
+        $body = $("body");
 
     // Detect scroll direction
     $(window).scroll(function () {
@@ -36,7 +37,7 @@ TWC.scrollingControl = function () {
         }
 
         // Detect scroll to bottom
-        if (scrollAmount >= $(document).height() - ($wH + bottomTrigger)) {
+        if (scrollAmount >= $(document).height() - ($(window).height() + bottomTrigger)) {
             $body.addClass("scroll-bottom");
         } else {
             $body.removeClass("scroll-bottom");
