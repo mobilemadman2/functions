@@ -1,0 +1,8 @@
+.vi-path-wrapper {position:relative;}
+.vi-svg-wrapper {
+    position:absolute; left:50%; top:0;
+    -webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);
+}
+.vi-svg-wrapper path {
+    fill:none; stroke:#878787; stroke-dasharray:2 4; stroke-width:2;
+}
