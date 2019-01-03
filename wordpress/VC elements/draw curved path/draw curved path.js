@@ -22,7 +22,7 @@ VI.drawPath = function () {
     $(window).on("load resize", function () {
         // d="M200 0 Q 350 50, 200 100 T 200 250"
         // https://www.w3schools.com/graphics/tryit.asp?filename=trysvg_path
-        step = $svg.height() / curveCount;
+        step = ($svg.height() - $end.height()) / curveCount;
 
         // starting point
         d = "M" + $svg.width() / 2 + " " + $begin.height() / 2 + " ";
@@ -30,13 +30,14 @@ VI.drawPath = function () {
         for (var i = 1; i <= curveCount - 1; i++) {
             var coordinate = "";
             if (i === 1) {
-                Q1x = 0;
+                Q1x = -350;
                 if (startFrom === "from_right") {
-                    Q1x = $svg.width();
+                    Q1x = $svg.width() + 350;
                 }
-                Q1y = step / 2;
+
+                Q1y = step / 2 + $begin.height();
                 Q2x = $svg.width() / 2;
-                Q2y = step;
+                Q2y = step + $begin.height();
                 coordinate = "Q " + Q1x + " " + Q1y + ", " + Q2x + " " + Q2y;
             } else {
                 Tx = $svg.width() / 2;
@@ -47,7 +48,7 @@ VI.drawPath = function () {
         }
 
         // ending point
-        d += "T " + $svg.width() / 2 + " " + ($svg.height() - $end.height() * 0.8);
+        d += "T " + $svg.width() / 2 + " " + ($svg.height() - $end.height() * 0.9);
 
         // add path data
         $path.attr("d", d);
