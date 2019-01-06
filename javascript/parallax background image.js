@@ -1,28 +1,32 @@
 /**
  * Parallax using background image v2.0
  * @param el
- * @param positionX: background position x | default center
+ * @param speed : (0;1] | default 0.5
+ * @param positionX: background horizontal position | default center
  */
-TWC.backgroundParallax = function (el, positionX) {
+TWC.backgroundParallax = function (el, speed, positionX) {
     $(el).each(function () {
         var _this = $(this);
         if (typeof positionX === "undefined") {
             positionX = "center";
         }
         positionX += " ";
+        if (typeof speed === "undefined") {
+            speed = 0.5;
+        }
         $(window).on('load resize', function () {
             if ($(window).width() > 768) {
                 var offset = _this.offset().top, wScroll = 0, scroll_window;
 
                 // On first load
                 scroll_window = $(window).scrollTop();
-                wScroll = (scroll_window - offset) * 0.5;
+                wScroll = (scroll_window - offset) * speed;
                 _this.css('background-position', positionX + wScroll + 'px');
 
                 // On scroll
                 $(window).on("scroll", function () {
                     scroll_window = $(window).scrollTop();
-                    wScroll = (scroll_window - offset) * 0.5;
+                    wScroll = (scroll_window - offset) * speed;
                     _this.css('background-position', positionX + wScroll + 'px');
                 });
             } else {
