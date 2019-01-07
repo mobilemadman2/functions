@@ -1,5 +1,5 @@
 /**
- * Scroll control with classes
+ * Control scrolling states via classes
  */
 TWC.scrollingControl = function () {
     var lastPosition = 0, // should not modify
