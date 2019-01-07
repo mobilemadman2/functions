@@ -1,0 +1,18 @@
+/* SEPARATOR */
+.custom-separator.vc_separator {position:relative;}
+.custom-separator.vc_separator.vc_sep_color_grey .vc_sep_line {border-color:#89242e;}
+.custom-separator.vc_separator:before,
+.custom-separator.vc_separator:after {
+    content:''; position:absolute; top:-2px;
+    width:6px; height:6px; background:#89242e;
+    border-radius:50%;
+}
+.custom-separator.vc_separator-has-text:before,
+.custom-separator.vc_separator-has-text:after {top:5px;}
+.custom-separator.vc_separator:before {left:0;}
+.custom-separator.vc_separator:after {right:0;}
+.custom-separator.vc_separator-has-text h4 {
+    font-size:14px; text-transform:uppercase; letter-spacing:2px; color:#89242e;
+}
+.custom-separator.vc_separator_align_left h4 {padding-left:15px!important;}
+.custom-separator.vc_separator_align_right h4 {padding-right:15px!important;}
