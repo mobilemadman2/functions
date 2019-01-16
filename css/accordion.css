@@ -1,0 +1,34 @@
+/* ACCORDION */
+.wpb-js-composer .custom_accordeon.vc_tta.vc_general .vc_tta-panel-title {font-size:25px;}
+.wpb-js-composer .vc_tta.vc_general .vc_tta-panel:not(:last-child) {margin-bottom:5px;}
+.wpb-js-composer .custom_accordeon.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body {
+    background:transparent; padding-right:0; padding-left:0;
+}
+
+/* ACCORDION (active) */
+.wpb-js-composer .custom_accordeon.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-heading {
+    background:#6b3f03;
+}
+.wpb-js-composer .custom_accordeon.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-heading:focus,
+.wpb-js-composer .custom_accordeon.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-heading:hover {
+    background:#6b3f03;
+}
+.wpb-js-composer .custom_accordeon.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-title>a {color:#fff;}
+.wpb-js-composer .custom_accordeon.vc_tta-color-grey.vc_tta-style-classic .vc_active .vc_tta-panel-heading .vc_tta-controls-icon::after,
+.wpb-js-composer .custom_accordeon.vc_tta-color-grey.vc_tta-style-classic .vc_active .vc_tta-panel-heading .vc_tta-controls-icon::before {
+    border-color:#fff;
+}
+
+/* ACCORDION (inactive) */
+.wpb-js-composer .custom_accordeon.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-heading {
+    background:rgba(107, 63, 3, 0.1);
+}
+.wpb-js-composer .custom_accordeon.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-heading:focus,
+.wpb-js-composer .custom_accordeon.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-heading:hover {
+    background:rgba(107, 63, 3, 0.2);
+}
+.wpb-js-composer .custom_accordeon.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-title>a {color:#6b3f03;}
+.wpb-js-composer .custom_accordeon.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel-heading .vc_tta-controls-icon::after,
+.wpb-js-composer .custom_accordeon.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel-heading .vc_tta-controls-icon::before {
+    border-color:#6b3f03;
+}
