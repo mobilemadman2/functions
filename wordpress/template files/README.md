@@ -50,6 +50,14 @@
 * [Masonry PACKAGED 4.2.0](http://masonry.desandro.com) - Cascading grid layout library
 * [SmoothScroll v1.2.1](https://github.com/gblazex/smoothscroll-for-websites/wiki)
 
+* [FancyBox 3](http://fancyapps.com/fancybox/3/docs/)
+* [Magnific Popup 1.1.0](http://dimsemenov.com/plugins/magnific-popup/)
+
+* [TweenMax 1.19.0](https://greensock.com/docs)
+* [ScrollMagic 2.0.6](http://scrollmagic.io/docs/index.html)
+* [ScrollMagic Indicator Debug 2.0.6](http://scrollmagic.io/docs/index.html)
+* [DrawSVG 1.1.0](https://github.com/lcdsantos/jquery-drawsvg)
+
 ## Authors
 
 * **Win** - *Designer*
