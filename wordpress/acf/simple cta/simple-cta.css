@@ -1,0 +1,9 @@
+/* CTA */
+#cta-buttons {position:fixed; z-index:9;}
+.cta-item:not(:last-child) {margin-bottom:20px;}
+.cta-item__link {
+    display:block; width:60px; height:60px; line-height:60px;
+    background:#f8ac00; border-radius:50%; border:1px solid #fff;
+    font-size:35px; color:#fff; text-align:center;
+}
+.cta-item__link:hover, .cta-item__link:focus {background:#353535; color:#fff;}
