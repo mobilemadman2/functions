@@ -44,6 +44,7 @@
 ### Libraries
 
 * [Fontawesome v5.5.0](https://fontawesome.com) - Font awesome icons
+* [Fontawesome v4.7.0](https://fontawesome.com/v4.7.0/icons/) - Font awesome icons
 * [Slick v1.6.0](http://kenwheeler.github.io/slick/) - the last carousel you'll ever need
 * [mCustomScrollbar v3.1.5](http://manos.malihu.gr/jquery-custom-content-scroller/) - jQuery custom content scroller
 * [jQuery Nice Select v1.0](https://github.com/hernansartorio/jquery-nice-select)
