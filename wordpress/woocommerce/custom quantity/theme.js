@@ -20,5 +20,8 @@ TWC.customQuantity = function () {
         $input.val(newVal);
         $input.focus();
         $input.keydown();
+
+        // remove disable attribute from update button (cart page)
+        $('body.woocommerce-cart form.woocommerce-cart-form button[name="update_cart"]').prop("disabled", false);
     });
 };
