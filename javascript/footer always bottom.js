@@ -1,10 +1,10 @@
 /**
  * Footer always at bottom of the page
  */
-VIIVUE.footerAlwaysBottom = function () {
+TWC.footerAlwaysBottom = function () {
     if ($("body").height() < $(window).height()) {
         $(window).on("load resize", function () {
-            var minHeight = $(window).height() - ($("header.main_header").height() + $("footer").height());
+            var minHeight = $(window).height() - ($("header.header").outerHeight() + $("footer").outerHeight());
             $("#primary").css("min-height", minHeight + "px");
         });
     }
