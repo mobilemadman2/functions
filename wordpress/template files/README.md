@@ -45,8 +45,8 @@
 
 * [Fontawesome v5.5.0](https://fontawesome.com) - Font awesome icons
 * [Fontawesome v4.7.0](https://fontawesome.com/v4.7.0/icons/) - Font awesome icons
-* [Slick v1.6.0](http://kenwheeler.github.io/slick/) - the last carousel you'll ever need
-* [mCustomScrollbar v3.1.5](http://manos.malihu.gr/jquery-custom-content-scroller/) - jQuery custom content scroller
+* [Slick v1.9.0](http://kenwheeler.github.io/slick/) - the last carousel you'll ever need
+* [mCustomScrollbar v3.1.13](http://manos.malihu.gr/jquery-custom-content-scroller/) - jQuery custom content scroller
 * [jQuery Nice Select v1.0](https://github.com/hernansartorio/jquery-nice-select)
 * [Masonry PACKAGED v4.2.0](http://masonry.desandro.com) - Cascading grid layout library
 * [SmoothScroll v1.2.1](https://github.com/gblazex/smoothscroll-for-websites/wiki)
@@ -54,7 +54,10 @@
 * [FancyBox v3](http://fancyapps.com/fancybox/3/docs/)
 * [Magnific Popup v1.1.0](http://dimsemenov.com/plugins/magnific-popup/)
 
-* [TweenMax v1.19.0](https://greensock.com/docs)
+* [TweenMax v1.19.0](https://greensock.com/docs/TweenMax)
+* [TweenLite v2.1.1](https://greensock.com/docs/TweenLite)
+* [TimelineLite v2.1.1](https://greensock.com/docs/TimelineLite)
+* [SplitText v0.5.6](https://greensock.com/SplitText)
 * [ScrollMagic v2.0.6](http://scrollmagic.io/docs/index.html)
 * [ScrollMagic Indicator Debug v2.0.6](http://scrollmagic.io/docs/index.html)
 * [DrawSVG v1.1.0](https://github.com/lcdsantos/jquery-drawsvg)
