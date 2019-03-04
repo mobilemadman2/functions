@@ -19,3 +19,10 @@
 .custom-quantity a {font-size:33px; cursor:pointer; color:#443554;}
 .custom-quantity a:hover {background:#ff5a5a; color:#fff;}
 .custom-quantity a.decrease {line-height:43px !important}
+
+/* Hide HTML5 Up and Down arrows. */
+.custom-quantity input[type="number"]::-webkit-outer-spin-button,
+.custom-quantity input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; margin: 0;
+}
+.custom-quantity input[type="number"] {-moz-appearance: textfield;}
