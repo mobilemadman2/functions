@@ -1,6 +1,12 @@
 /**
  * GSAP Animation with scroll magic
  */
+/*
+.txt_animation_fly_from_bottom, .txt_animation_fly_from_top,
+.txt_animation_fly_from_left, .txt_animation_zoom_in {}
+[class*="txt_animation"] {display:inline-block; overflow:hidden;}
+[class*="txt_animation"].word {white-space:nowrap;}
+ */
 TWC.gsapAnimation = function () {
     /* Letter fly from bottom */
     $(".txt_animation_fly_from_bottom").each(function (i, element) {
