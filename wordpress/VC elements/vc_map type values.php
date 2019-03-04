@@ -48,12 +48,22 @@ vc_map( array(
 			"param_name" => "color",
 			"value"      => '#dfdfdf'
 		),
+		array(
+			"type"       => "vc_link",
+			"heading"    => __( "URL", "deroeve" ),
+			"param_name" => "url",
+			"value"      => ''
+		),
 	)
 ) );
 
 add_shortcode( "sample_type_values", "sample_type_values_shortcode" );
 function sample_type_values_shortcode( $attr ) {
 	$html = '';
+	$href       = vc_build_link( $attr['url'] );
+	$hrefTitle  = $href['title'];
+	$hrefURL    = $href['url'];
+	$hrefTarget = $href['target'];
 
 	return $html;
 }
