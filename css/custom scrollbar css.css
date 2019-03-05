@@ -1,0 +1,4 @@
+/* CUSTOM SCROLLBAR (vertical) */
+.mCS-flora-kitchen.mCSB_scrollTools {width:6px;}
+.mCS-flora-kitchen.mCSB_scrollTools .mCSB_draggerRail {width:100%; border-radius:0;}
+.mCS-flora-kitchen.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {background:#2e445f; border-radius:0; width:100%;}
