@@ -3,10 +3,7 @@
  * Add body class
  */
 function add_slug_body_class( $classes ) {
-	global $post;
-	if ( isset( $post ) ) {
-		$classes[] = 'twc-page-loading';
-	}
+	$classes[] = 'twc-page-loading';
 
 	return $classes;
 }
