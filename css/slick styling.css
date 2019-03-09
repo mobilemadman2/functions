@@ -1,4 +1,30 @@
-/* SLICK */
+/* SLICK v2 */
+.slick-dots li {width:auto; height:auto; margin:0 8px;}
+.slick-dots li button {
+    width:10px; height:10px; background:#fff; border-radius:50%; border:1px solid #da4f4e; padding:0;
+    -webkit-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease;
+}
+.slick-dots li.slick-active button {background:#da4f4e;}
+.slick-dots li button:before {display:none;}
+
+ul.slick-slider {margin:0; list-style:none;}
+ul.slick-slider li.slick-slide {padding:0;}
+.slick-track {margin:0 auto;}
+
+.slick-slider:hover .slick-arrow {opacity:1;}
+.slick-arrow {
+    width:35px; height:35px; line-height:35px; text-align:center; z-index:1; opacity:0;
+    -webkit-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease;
+}
+.slick-prev {left:0;}
+.slick-next {right:0;}
+.slick-arrow:before {font-family:'fontawesome';line-height:35px;color:#5a697e;font-size:35px;}
+.slick-prev:before {content:'\f104';}
+.slick-next:before {content:'\f105';}
+.slick-disabled.slick-arrow {opacity:0; cursor:not-allowed;}
+
+
+/* SLICK v1 */
 .slick-dotted.slick-slider {margin-bottom:0;}
 .slick-list {margin-bottom:40px;}
 
