@@ -1,6 +1,11 @@
-/**** print object - for testing only ****/
-function purinto( $obj = '' ) {
-	if ( $obj == '' ) {
+<?php
+/**
+ * Print readable vars
+ *
+ * @param bool $obj
+ */
+function _print_r( $obj = false ) {
+	if ( ! $obj ) {
 		$obj = get_queried_object();
 	}
 	echo '<pre>';
