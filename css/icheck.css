@@ -1,0 +1,11 @@
+/* iCheck */
+.icheckbox {
+    width:15px; height:15px; border:1px dashed #b7b7b7; border-radius:3px;
+    display:inline-block; position:relative; cursor:pointer;
+}
+.icheckbox:before {
+    content:'\e914'; font-family:'icomoon'; font-size:12px; line-height:1;
+    position:absolute; top:0; left:2px; opacity:0;
+    -webkit-transition:all .1s ease;-o-transition:all .1s ease;transition:all .1s ease;
+}
+.icheckbox.checked:before {opacity:1;}
