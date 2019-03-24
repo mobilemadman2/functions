@@ -1,9 +1,9 @@
 /**
  * Parallax using background image v2.1
  * @param el
- * @param speed : (0;1] | default 0.5
- * @param responsive
- * @param positionX: background horizontal position | default center
+ * @param speed : (0;1] | default 0.5 (optional)
+ * @param responsive (optional)
+ * @param positionX: background horizontal position | default center (optional)
  */
 TWC.backgroundParallax = function (el, speed, responsive, positionX) {
     $(el).each(function () {
