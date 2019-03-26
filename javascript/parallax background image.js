@@ -1,6 +1,6 @@
 /**
  * Parallax using background image v2.1
- * @param el
+ * @param el : element that has background-image
  * @param speed : (0;1] | default 0.5 (optional)
  * @param responsive (optional)
  * @param positionX: background horizontal position | default center (optional)
