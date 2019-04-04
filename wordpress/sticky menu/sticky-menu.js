@@ -1,11 +1,10 @@
 /**
- * Sticky menu, Scrolling Control function is required
+ * Sticky header, scrolling status function is required
  */
-TWC.stickyMenu = function ($el) {
-    // validate element
+TWC.stickyHeader = function (el) {
+    var $el = $(el), $parent = $el.parent();
     if ($el.length > 0) {
-        var $parent = $el.parent();
-        $el.addClass('sticky-menu');
+        $el.addClass('sticky-header');
 
         // add padding to parent
         $window.on('load resize', function () {
