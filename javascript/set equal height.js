@@ -1,8 +1,8 @@
 /**
- * Set equal height on load, resize
- * @param $items
+ * Keep element's height are the same
+ * @param items
  */
-TWC.setEqualHeight = function (el) {
+TWC.keepSameHeight = function (el) {
     var max_h, $items = $(el);
     $(window).on('load resize', function () {
         max_h = 0;
