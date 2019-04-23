@@ -3,23 +3,19 @@
  * Social buttons [sociaal-knoppen]
  */
 function social_buttons_shortcode() {
-// Get data
-	$data = get_field( 'social_buttons', 'option' );
+	$data = get_field( 'social_links', 'option' );
 	if ( isset( $data ) && ! empty( $data ) ) {
-// Build html
-		$html = '<ul class="social-buttons">';
+		$html = '<div class="social-buttons">';
 		foreach ( $data as $item ) {
-			$icon  = $item['icon'];
-			$title = $item['title'];
-			$url   = $item['url'];
-			$html  .= '<li><a href="' . $url . '" title="' . $title . '" target="_blank">' . $icon . '</a></li>';
+			$icon  = $item['social_icon'];
+			$title = $item['social_text'];
+			$url   = $item['social_url'];
+			$html  .= '<a class="social-buttons__link" href="' . $url . '" title="' . $title . '" target="_blank">' . $icon . '</a>';
 		}
-		$html .= '</ul>';
+		$html .= '</div>';
 
 		return $html;
-	} else {
-		return 'No social button found!';
 	}
 }
 
-add_shortcode( 'sociaal-knoppen', 'social_buttons_shortcode' );
+add_shortcode( 'sociale-knoppen', 'social_buttons_shortcode' );
