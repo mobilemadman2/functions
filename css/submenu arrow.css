@@ -1,0 +1,42 @@
+/* Submenu arrow (down to X) */
+.desktop-menu ul.menu > li[class*="has-child"] > a {padding-right:20px; position:relative;}
+.desktop-menu ul.menu > li[class*="has-child"] > a:before, .desktop-menu ul.menu > li[class*="has-child"] > a:after {
+    content:''; position:absolute; top:50%; right:0;
+    transform:translateY(-50%);
+    transform-origin:50% 50%;
+    width:10px; height:2px; background:#08213e;
+    transition:all .3s ease;
+}
+.desktop-menu ul.menu > li[class*="has-child"] > a:before {
+    transform:translateY(-50%) rotate(45deg);
+    right:6px;
+}
+.desktop-menu ul.menu > li[class*="has-child"] > a:after {
+    transform:translateY(-50%) rotate(-45deg);
+}
+.desktop-menu ul.menu > li[class*="has-child"] > a:hover:before {
+    transform:translateY(-50%) rotate(-45deg); right:2px;
+}
+.desktop-menu ul.menu > li[class*="has-child"] > a:hover:after {
+    transform:translateY(-50%) rotate(45deg); right:2px;
+}
+
+/* Submenu arrow (down to right) */
+.desktop-menu ul.menu > li[class*="has-child"] > a {padding-right:40px; position:relative;}
+.desktop-menu ul.menu > li[class*="has-child"] > a:before, .desktop-menu ul.menu > li[class*="has-child"] > a:after {
+    content:''; position:absolute; top:50%; right:0;
+    -webkit-transform-origin:50% 50%;-ms-transform-origin:50% 50%;transform-origin:50% 50%;
+    width:15px; height:3px; background:#fff;
+    -webkit-transition:all .4s ease;-o-transition:all .4s ease;transition:all .4s ease;
+}
+.desktop-menu ul.menu > li[class*="has-child"] > a:hover:after,
+.desktop-menu ul.menu > li[class*="has-child"] > a:before {
+    -webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);
+    right:9px;
+}
+.desktop-menu ul.menu > li[class*="has-child"] > a:hover:before,
+.desktop-menu ul.menu > li[class*="has-child"] > a:after {
+    -webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);
+}
+.desktop-menu ul.menu > li[class*="has-child"] > a:hover:before {right:2px; top:23px;}
+.desktop-menu ul.menu > li[class*="has-child"] > a:hover:after {right:2px; top:14px;}
