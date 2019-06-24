@@ -4,7 +4,7 @@
  *
  * @param bool $obj
  */
-function _print_r( $obj = false ) {
+function purinto( $obj = false ) {
 	if ( ! $obj ) {
 		$obj = get_queried_object();
 	}
